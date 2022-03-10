@@ -58,8 +58,7 @@ open class BaseActivity : AppCompatActivity() {
             }else if ((newEquation.contains("x")) || (newEquation.contains("X")) || (newEquation.contains(
                     "*"))
             ) {
-                val bb = newEquation.lowercase()
-                val split = bb.split("x")
+                val split = newEquation.split("x")
                 val result = split[0].toInt() * split[1].toInt()
                 return "The answer is ${result} $text "
             } else if (newEquation.contains("/")) {
@@ -114,7 +113,7 @@ open class BaseActivity : AppCompatActivity() {
                 return calculator(a)
             }else if (mess.contains("how are you")&& mess.contains("you")){
                 return ext
-            }else if (mess.startsWith("Francesca")){
+            }else if (mess.contains("Francesca")){
                 return "Yaaasssssssssss $text?"
             }
             return "Sorry could you come again $text?"

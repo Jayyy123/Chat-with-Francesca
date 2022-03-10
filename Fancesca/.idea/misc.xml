@@ -8,7 +8,8 @@
         <entry key="app/src/main/res/drawable/francescas.xml" value="0.208" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.208" />
         <entry key="app/src/main/res/drawable/message.xml" value="0.208" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout-v31/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2898089171974522" />
         <entry key="app/src/main/res/layout/francescas.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/messages.xml" value="0.32882537841796877" />
       </map>

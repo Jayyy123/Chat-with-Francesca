@@ -2,15 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/ll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="5dp"
-    android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp">
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="16dp">
 
 
     <TextView
@@ -31,18 +30,18 @@
     <TextView
         android:id="@+id/jaysmessage"
         android:layout_width="200dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textAlignment="textEnd"
-        android:paddingEnd="13dp"
-        android:paddingStart="6dp"
-
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="12dp"
         android:background="@drawable/message"
         android:hint="@string/jayT"
-        android:maxEms="20" />
-    </RelativeLayout>
+
+        android:maxEms="20"
+        android:paddingStart="6dp"
+        android:paddingEnd="13dp"
+        android:textAlignment="textEnd"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
 
 

@@ -5,12 +5,14 @@ import android.os.Bundle
 import android.provider.Settings
 import android.view.KeyEvent
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
 import java.util.concurrent.Delayed
 import kotlin.coroutines.coroutineContext
 import kotlin.coroutines.suspendCoroutine
+import kotlin.random.Random
 
 private val adapter = MessageAdapter()
 class MainActivity : BaseActivity() {
@@ -21,6 +23,8 @@ class MainActivity : BaseActivity() {
         recycler()
 
         clicker()
+
+        supportActionBar?.title = "Francesca"
     }
 
     fun recycler(){
@@ -35,7 +39,6 @@ class MainActivity : BaseActivity() {
         recycle.scrollToPosition(adapter.itemCount - 1)
         }
 
-
     fun clicker(){
         send.setOnClickListener{
             val a = edit_text.text.toString()
@@ -47,6 +50,8 @@ class MainActivity : BaseActivity() {
                 recycle.scrollToPosition(adapter.itemCount - 1)
 
                 francesca(a)
+            }else{
+                adapter.insertMessage(Messagess("Are you giving me the silent treatment Love?", RECEIVER_ID))
             }
         }
     }
